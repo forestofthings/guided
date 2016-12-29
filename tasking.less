@@ -1,17 +1,31 @@
+// The fundamentals
+
 @background-color: white;
 
-// Enable text wrap in editor
+/* Text wrap */
 editor {
   editor-wrap-to-column: 100;
   item-wrap-to-column: 66;
 }
 
-// Color items tagged with @today red
+// Tags and tag effects
+
+/* Items tagged @today turn red */
 item[data-today] {
   color: rgb(255, 0, 0);
+  font-weight: bold;
 }
 
-// Color items tagged with @waiting orange
+/* Items tagged @waiting turn orange */
 item[data-waiting] {
   color: rgb(255,140,0);
+}
+
+// Interview-specific functions
+/* I use TaskPaper for interview scripts. These functions are specific to that use. */
+
+/* Items tagged @ask turn red */
+item[data-ask] {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
 }
