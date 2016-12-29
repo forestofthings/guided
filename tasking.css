@@ -1,0 +1,17 @@
+@background-color: white;
+
+// Enable text wrap in editor
+editor {
+  editor-wrap-to-column: 100;
+  item-wrap-to-column: 66;
+}
+
+// Color items tagged with @today red
+item[data-today] {
+  color: rgb(255, 0, 0);
+}
+
+// Color items tagged with @waiting orange
+item[data-waiting] {
+  color: rgb(255,140,0);
+}
